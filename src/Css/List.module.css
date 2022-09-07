@@ -1,0 +1,23 @@
+.Box {
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 50px;
+    width: 60%;
+    min-height: 50vh;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.List {
+    background-color: rgba(128, 128, 128, 0.25);
+    text-align: left;
+    list-style: none;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+ul {
+    margin: 15px;
+    padding-left: 15px;
+}

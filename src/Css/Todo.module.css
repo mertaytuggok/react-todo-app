@@ -1,0 +1,25 @@
+* {
+    text-align: center;
+}
+
+.Input {
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 50px;
+    border: 2px solid slategrey;
+    width: 60%;
+    height: 5vh;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.Button {
+    width: 10%;
+    height: 5vh;
+    font-size: medium;
+    margin-top: 50px;
+    margin-left: 25px;
+    border-radius: 5px;
+    border: 2px solid slategrey;
+    cursor: pointer;
+}

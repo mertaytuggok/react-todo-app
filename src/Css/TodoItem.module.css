@@ -1,0 +1,30 @@
+.Edit {
+    width: 10%;
+    height: 3vh;
+    font-size: medium;
+    border-radius: 5px;
+    border: 2px solid slategrey;
+    cursor: pointer;
+
+}
+
+.Delete {
+    width: 10%;
+    height: 3vh;
+    font-size: medium;
+    border-radius: 5px;
+    border: 2px solid slategrey;
+    cursor: pointer;
+    align-items: right;
+    justify-items: right;
+    justify-content: right;
+
+}
+
+li {
+    list-style: none;
+    text-align: left;
+    background-color: cornsilk;
+    margin-bottom: 10px;
+    font-size: medium;
+}

@@ -1,0 +1,50 @@
+* {
+    text-align: center;
+}
+
+header {
+    position: relative;
+    border: 1px solid #000;
+    height: 100px;
+}
+
+.Logo {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    font-size: 48px;
+
+}
+
+.Button {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    height: 22px;
+    border: 1px solid #000;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+.Login {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+}
+
+.Logout {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+}
