@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form";
 export default function Todo() {
 
 
-    const { register, handleSubmit } = useForm();
+    const { register,formState: { errors },  handleSubmit } = useForm();
    
 
     const { user } = useSelector(state => state.Auth)
@@ -35,6 +35,9 @@ export default function Todo() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} >
+            <p className={styles.errors}>
+                 {errors.todo && <p>En Az 3 Karakter Giriniz..</p>}
+                 </p>
             <input  
             {...register("todo", { required: true, minLength: 3 })}
                 type="text"
@@ -43,6 +46,7 @@ export default function Todo() {
                 onChange={e => setTodo(e.target.value)}
                 placeholder="Todo Giriniz"
                  />
+
             <button
                 type="submit"
                 disabled={!todo || !user}

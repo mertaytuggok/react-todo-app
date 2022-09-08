@@ -6,7 +6,7 @@ import { login } from '../Stores/Auth';
 
 const Login = () => {
 
-    const { register, handleSubmit } = useForm();
+    const { register, formState: { errors }, handleSubmit } = useForm();
     const onSubmit = e => {
         dispatch(login({
             username: username
@@ -23,6 +23,7 @@ const Login = () => {
 
     return (
         <div className={styles.Modal}>
+
             <form className={styles.inner} onSubmit={handleSubmit(onSubmit)}>
                 <input
                     {...register("username", { required: true, minLength: 3 })}
@@ -36,6 +37,9 @@ const Login = () => {
                     className={styles.Button}>
                     Giriş Yap
                 </button>
+                <div className={styles.errors}>
+                    {errors.username && <p>En Az 3 Karakter Giriniz..</p>}
+                </div>
             </form>
         </div>
     )

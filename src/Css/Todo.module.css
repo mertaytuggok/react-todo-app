@@ -5,16 +5,15 @@
 .Input {
     text-align: left;
     padding-left: 15px;
-    margin-top: 50px;
     border: 2px solid slategrey;
-    width: 60%;
+    width: 50%;
     height: 5vh;
     font-size: medium;
     border-radius: 5px;
 }
 
 .Button {
-    width: 10%;
+    width: 8%;
     height: 5vh;
     font-size: medium;
     margin-top: 50px;
@@ -22,4 +21,10 @@
     border-radius: 5px;
     border: 2px solid slategrey;
     cursor: pointer;
+}
+
+.errors{
+    color: brown;
+    font:bold;
+    font-size: large;
 }

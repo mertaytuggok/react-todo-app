@@ -22,8 +22,11 @@ export default function Header() {
         <div>
 
             <header className={styles.Header}>
-                <text className={styles.Logo}>
-                    TODO APP
+                <text className={styles.LogoT}>
+                    TODO
+                </text>
+                <text className={styles.LogoA}>
+                APP
                 </text>
                 {user && (
                     <nav>

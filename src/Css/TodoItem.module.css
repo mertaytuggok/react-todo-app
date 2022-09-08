@@ -1,6 +1,8 @@
 .Edit {
-    width: 10%;
-    height: 3vh;
+    position: absolute;
+    right: 25.5%;
+    width: 80px;
+    height: 2.5vh;
     font-size: medium;
     border-radius: 5px;
     border: 2px solid slategrey;
@@ -9,8 +11,10 @@
 }
 
 .Delete {
-    width: 10%;
-    height: 3vh;
+    position: absolute;
+    right: 22%;
+    width: 60px;
+    height: 2.5vh;
     font-size: medium;
     border-radius: 5px;
     border: 2px solid slategrey;
@@ -24,7 +28,9 @@
 li {
     list-style: none;
     text-align: left;
-    background-color: cornsilk;
+    background-color:rgb(168, 189, 191, .25);
     margin-bottom: 10px;
-    font-size: medium;
+    font-size: large;
+    border-radius: 50px;
+    padding-left: 15px;
 }
