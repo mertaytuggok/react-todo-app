@@ -1,0 +1,36 @@
+
+
+.text{
+    text-align: left;
+    padding-left: 10px;
+    border: 2px solid rgb(168, 189, 191, .5);
+    width: 85%;
+    height: 8vh;
+    font-size: medium;
+    border-radius: 5px;
+    
+}
+
+.save{
+    margin-top: 50px;
+    width: 100px;
+    height: 3vh;
+    font-size: large;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(168, 189, 191, .5);
+    background-color: rgb(168, 189, 191);
+    cursor: pointer;
+}
+
+.close{
+    width: 100px;
+    height: 3vh;
+    font-size: large;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(168, 189, 191, .5);
+    background-color: rgb(168, 189, 191);
+    cursor: pointer;
+       
+}

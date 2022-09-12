@@ -1,9 +1,10 @@
 import { nanoid } from "@reduxjs/toolkit"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import styles from "../Css/Todo.module.css"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { addTodoHandle } from "../Utils"
 import { useForm } from "react-hook-form";
+import { createTodo, getTodos } from "../Stores/Todo"
 
 
 
@@ -13,9 +14,16 @@ export default function Todo() {
 
     const { register,formState: { errors },  handleSubmit } = useForm();
    
-
+    const dispatch = useDispatch()
     const { user } = useSelector(state => state.Auth)
     const [todo, setTodo] = useState('')
+
+    useEffect(() => {
+        dispatch(createTodo(todo)).then(() => {
+            dispatch(getTodos());
+          })
+    }, [])
+
 
 
     const onSubmit = e => {

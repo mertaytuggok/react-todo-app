@@ -3,7 +3,7 @@
     right: 25.5%;
     width: 80px;
     height: 2.5vh;
-    font-size: medium;
+    font-size: small;
     border-radius: 5px;
     border: 2px solid slategrey;
     cursor: pointer;
@@ -15,7 +15,7 @@
     right: 22%;
     width: 60px;
     height: 2.5vh;
-    font-size: medium;
+    font-size: small;
     border-radius: 5px;
     border: 2px solid slategrey;
     cursor: pointer;
@@ -33,4 +33,12 @@ li {
     font-size: large;
     border-radius: 50px;
     padding-left: 15px;
+}
+
+.Check{
+  
+}
+
+.text{
+    margin-left: 5px;
 }

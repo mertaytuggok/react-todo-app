@@ -23,7 +23,8 @@ export const todoDelete = createAsyncThunk("todos/deleteTodo", async (id) => {
 });
 
 export const createTodo = createAsyncThunk("todos/createTodo", async (todo) => {
-  await axios.post(`https://630cc89e83986f74a7ca6c9a.mockapi.io/todos/`, todo);
+  await axios.post(`https://630cc89e83986f74a7ca6c9a.mockapi.io/todos/`,{
+    content: todo});
 });
 export const todoEdit = createAsyncThunk(
   "todos/editTodo",

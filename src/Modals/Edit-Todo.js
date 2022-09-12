@@ -2,6 +2,7 @@ import { useState } from "react"
 import { editTodo } from "../Stores/Todo"
 import { useDispatch } from "react-redux/es/exports"
 import { useForm } from "react-hook-form";
+import styles from "../Css/Edit-todo.module.css"
 
 
 
@@ -29,25 +30,23 @@ export default function EditTodo({ data, close }) {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input
                     {...register("todo", { required: true, minLength: 3 })}
+                    className={styles.text}
                     type="text"
                     value={todo}
                     onChange={e => setTodo(e.target.value)} />
-                <label>
-                    <input
-                        type="checkbox"
-                        checked={done}
-                        onChange={e => setDone(e.target.value)} />
-                    Tamamlandı Olarak İşaretle
-                </label>
+
                 <button
+                    className={styles.save}
                     type="submit">
                     Kaydet
                 </button>
-            </form>
-            <button
+                <button
+                className={styles.close}
                 onClick={close}>
                 Kapat
             </button>
+            </form>
+           
         </div>
     )
 }

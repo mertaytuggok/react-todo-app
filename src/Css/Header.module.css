@@ -4,51 +4,70 @@
 
 header {
     position: relative;
-    border: 1px solid rgb(168, 189, 191, .5);
+
     height: 100px;
-    background-color:rgb(168, 189, 191, .5)
+    
+    border: 1px solid rgb(168, 189, 191, .5);
+    background-color:rgb(168, 189, 191, .5);
+    
 }
 
 .LogoT {
     position: absolute;
+    bottom: 5%;
     left: 35px;
+    
     color:rgb(217, 155, 102);
+    
     font:bolder;
     font-size: 41px;
 
 }
 .LogoA {
     position: absolute;
-    top: 35px;
     left: 110px;
-    
+
     color:rgb(191, 144, 117);
+    
     font:bolder;
     font-style: italic;
     font-size: 35px;
-
 }
 
 .Button {
     position: absolute;
     top: 25px;
     right: 100px;
+   
     height: 22px;
+   
     border: 1px solid #F2D3AC;
-    background-color: rgb(242, 211, 172, .5);
-    padding: 3px;
     border-radius: 5px;
-
+    background-color: rgb(242, 211, 172, .5);
+   
+    padding: 3px;
 }
 
 .Logout {
     position: absolute;
     top: 25px;
     right: 25px;
+   
     height: 30px;
+   
     cursor: pointer;
-    border: 1px solid #F2D3AC;
-    background-color: rgb(242, 211, 172, .5);
-    border-radius: 5px;
 
+    border: 1px solid #F2D3AC;
+    border-radius: 5px;
+    background-color: rgb(242, 211, 172, .5);
+    
+
+}
+
+.Theme{
+    position: absolute;
+    top: 20px;
+    background: transparent;
+    border: none;
+    transition: 5s;
 }

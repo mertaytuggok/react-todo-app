@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import styles from "../Css/Login.module.css"
 import { useForm } from "react-hook-form";
 import { login } from '../Stores/Auth';
@@ -7,22 +7,26 @@ import { login } from '../Stores/Auth';
 const Login = () => {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
+    
     const onSubmit = e => {
         dispatch(login({
             username: username
-        }))
-        localStorage.setItem("user", username)
+        })) 
     }
 
     const dispatch = useDispatch()
     const [username, setUserName] = useState("")
 
-
-
-
-
     return (
+     
+         
         <div className={styles.Modal}>
+             <p className={styles.LogoT}>
+                    TODO
+                </p>
+                <p className={styles.LogoA}>
+                APP
+                </p>
 
             <form className={styles.inner} onSubmit={handleSubmit(onSubmit)}>
                 <input
