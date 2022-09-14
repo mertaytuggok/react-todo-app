@@ -38,6 +38,9 @@ export default function TodoItem({ todo, data }) {
                 onChange={handleChange}
                 type="checkbox"
                 />
+                <span  style={{ textDecoration: checked ? 'line-through' : false }}>
+                    {todo.content}
+                </span>
 
             <span 
              className={styles.text}
