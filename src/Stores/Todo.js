@@ -15,6 +15,7 @@ export const getTodos = createAsyncThunk("todos/getTodos", async () => {
   const response = await axios.get(
     "https://630cc89e83986f74a7ca6c9a.mockapi.io/todos"
   );
+  console.log(response)
   return response.data;
 });
 
