@@ -5,12 +5,12 @@ import Modal from "./Modal";
 import Theme from "./Theme";
 
 const store = configureStore({
-    reducer: {
-        Todo,
-        Auth,
-        Modal,
-        Theme
-    }
-})
+  reducer: {
+    Todo,
+    Auth,
+    Modal,
+    Theme,
+  },
+});
 
-export default store
+export default store;
